@@ -4,105 +4,94 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Agrinho - A Força do Agro</title>
-
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
-    <button onclick="mostrarMensagem()">
-  Clique para saber sobre o Agro
-</button>
-
-<p id="mensagem"></p>
-
-<script src="script.js"></script>
 <body>
 
-  <header>
+  <!-- Banner com botão de ação dentro -->
+  <div class="banner">
     <h1>🌱 Agrinho 2026</h1>
     <p>O Agro move o Brasil e fortalece o Paraná</p>
-  </header>
+    <button onclick="mostrarMensagem()">Clique para saber sobre o Agro</button>
+    <p id="mensagem"></p>
+  </div>
 
+  <!-- Navegação abaixo do banner -->
   <nav>
     <a href="#agro">O Agro</a>
     <a href="#beneficios">Benefícios</a>
     <a href="#parana">Agro no Paraná</a>
   </nav>
 
-  <div class="banner">
-    <h2>O campo produz alimento, emprego e desenvolvimento</h2>
-  </div>
+  <!-- Seções agrupadas de forma diferente -->
+  <main>
 
-  <section id="agro">
-    <h2 class="titulo">🌾 O que é o Agro?</h2>
+    <section id="agro" class="card-secao">
+      <h2 class="titulo">🌾 O que é o Agro?</h2>
+      <p>
+        O agronegócio é uma das atividades mais importantes do Brasil.
+        Ele envolve a produção de alimentos, criação de animais,
+        tecnologia no campo e exportação de produtos agrícolas.
+        O agro ajuda a alimentar milhões de pessoas e movimenta a economia.
+      </p>
+    </section>
 
-    <p>
-      O agronegócio é uma das atividades mais importantes do Brasil.
-      Ele envolve a produção de alimentos, criação de animais,
-      tecnologia no campo e exportação de produtos agrícolas.
-      O agro ajuda a alimentar milhões de pessoas e movimenta a economia.
-    </p>
-  </section>
-
-  <section id="beneficios">
-    <h2 class="titulo">✅ Coisas boas do Agro</h2>
-
-    <div class="cards">
-
-      <div class="card">
-        <h3>🍎 Produção de alimentos</h3>
-        <p>
-          O agro produz frutas, verduras, grãos, leite e carne para abastecer
-          o Brasil e vários países do mundo.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>💼 Geração de empregos</h3>
-        <p>
-          Milhões de pessoas trabalham no campo e nas indústrias ligadas ao agronegócio.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>🚜 Tecnologia</h3>
-        <p>
-          Máquinas modernas, drones e sistemas inteligentes ajudam a melhorar a produção.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>🌱 Sustentabilidade</h3>
-        <p>
-          Muitos produtores utilizam técnicas sustentáveis para preservar a natureza.
-        </p>
-      </div>
-
-    </div>
-  </section>
-
-  <section id="parana">
-    <div class="parana">
+    <section id="parana" class="card-secao">
       <h2 class="titulo">📍 O Agro no Paraná</h2>
+      <div class="parana-textos">
+        <p>
+          O Paraná é um dos estados mais fortes do agronegócio brasileiro.
+          O estado se destaca na produção de soja, milho, trigo, feijão e frango.
+        </p>
+        <p>
+          Além disso, o Paraná possui cooperativas agrícolas muito importantes,
+          que ajudam produtores rurais e fortalecem a economia do estado.
+        </p>
+        <p>
+          O agro paranaense investe em inovação, qualidade e sustentabilidade,
+          sendo referência para o Brasil.
+        </p>
+      </div>
+    </section>
 
-      <p>
-        O Paraná é um dos estados mais fortes do agronegócio brasileiro.
-        O estado se destaca na produção de soja, milho, trigo, feijão e frango.
-      </p>
+    <section id="beneficios" class="cards-secao">
+      <h2 class="titulo">✅ Coisas boas do Agro</h2>
+      <div class="cards">
 
-      <br>
+        <div class="card">
+          <h3>🍎 Produção de alimentos</h3>
+          <p>
+            O agro produz frutas, verduras, grãos, leite e carne para abastecer
+            o Brasil e vários países do mundo.
+          </p>
+        </div>
 
-      <p>
-        Além disso, o Paraná possui cooperativas agrícolas muito importantes,
-        que ajudam produtores rurais e fortalecem a economia do estado.
-      </p>
+        <div class="card">
+          <h3>💼 Geração de empregos</h3>
+          <p>
+            Milhões de pessoas trabalham no campo e nas indústrias ligadas ao agronegócio.
+          </p>
+        </div>
 
-      <br>
+        <div class="card">
+          <h3>🚜 Tecnologia</h3>
+          <p>
+            Máquinas modernas, drones e sistemas inteligentes ajudam a melhorar a produção.
+          </p>
+        </div>
 
-      <p>
-        O agro paranaense investe em inovação, qualidade e sustentabilidade,
-        sendo referência para o Brasil.
-      </p>
-    </div>
-  </section>
+        <div class="card">
+          <h3>🌱 Sustentabilidade</h3>
+          <p>
+            Muitos produtores utilizam técnicas sustentáveis para preservar a natureza.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
 
   <footer>
     <p>Projeto Agrinho 2026 - Por Estevan Lopes Hereck</p>
