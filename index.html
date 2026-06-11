@@ -3,28 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Agrinho - A Força do Agro</title>
+  <title>Agrinho 2026 - A Força do Agro</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 <body>
 
-  <!-- Banner com botão de ação dentro -->
+  <!-- Banner -->
   <div class="banner">
-    <h1>🌱 Agrinho 2026</h1>
-    <p>O Agro move o Brasil e fortalece o Paraná</p>
-    <button onclick="mostrarMensagem()">Clique para saber sobre o Agro</button>
-    <p id="mensagem"></p>
+    <div>
+      <h1>🌱 Agrinho 2026</h1>
+      <p>O Agro move o Brasil e fortalece o Paraná</p>
+      <button onclick="mostrarMensagem()">Clique para saber sobre o Agro</button>
+      <p id="mensagem"></p>
+    </div>
   </div>
 
-  <!-- Navegação abaixo do banner -->
+  <!-- Navegação -->
   <nav>
     <a href="#agro">O Agro</a>
     <a href="#beneficios">Benefícios</a>
     <a href="#parana">Agro no Paraná</a>
   </nav>
 
-  <!-- Seções agrupadas de forma diferente -->
   <main>
 
     <section id="agro" class="card-secao">
@@ -39,54 +40,103 @@
 
     <section id="parana" class="card-secao">
       <h2 class="titulo">📍 O Agro no Paraná</h2>
-      <div class="parana-textos">
-        <p>
-          O Paraná é um dos estados mais fortes do agronegócio brasileiro.
-          O estado se destaca na produção de soja, milho, trigo, feijão e frango.
-        </p>
-        <p>
-          Além disso, o Paraná possui cooperativas agrícolas muito importantes,
-          que ajudam produtores rurais e fortalecem a economia do estado.
-        </p>
-        <p>
-          O agro paranaense investe em inovação, qualidade e sustentabilidade,
-          sendo referência para o Brasil.
-        </p>
-      </div>
+
+      <p>
+        O Paraná é um dos estados mais fortes do agronegócio brasileiro.
+        O estado se destaca na produção de soja, milho, trigo, feijão e frango.
+      </p>
+
+      <p>
+        Além disso, o Paraná possui cooperativas agrícolas muito importantes,
+        que ajudam produtores rurais e fortalecem a economia do estado.
+      </p>
+
+      <p>
+        O agro paranaense investe em inovação, qualidade e sustentabilidade,
+        sendo referência para o Brasil.
+      </p>
     </section>
 
-    <section id="beneficios" class="cards-secao">
+    <section id="beneficios">
       <h2 class="titulo">✅ Coisas boas do Agro</h2>
+
       <div class="cards">
 
-        <div class="card">
-          <h3>🍎 Produção de alimentos</h3>
-          <p>
-            O agro produz frutas, verduras, grãos, leite e carne para abastecer
-            o Brasil e vários países do mundo.
-          </p>
-        </div>
+        <!-- Card 1 -->
+        <article class="card">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/2909/2909763.png"
+            alt="Produção de alimentos"
+            class="card-img"
+          >
 
-        <div class="card">
-          <h3>💼 Geração de empregos</h3>
-          <p>
-            Milhões de pessoas trabalham no campo e nas indústrias ligadas ao agronegócio.
-          </p>
-        </div>
+          <div class="card-conteudo">
+            <h3>🍎 Produção de alimentos</h3>
+            <p>
+              O agro produz frutas, verduras, grãos, leite e carne para
+              abastecer o Brasil e vários países do mundo.
+            </p>
 
-        <div class="card">
-          <h3>🚜 Tecnologia</h3>
-          <p>
-            Máquinas modernas, drones e sistemas inteligentes ajudam a melhorar a produção.
-          </p>
-        </div>
+            <button class="btn-card">Saiba mais</button>
+          </div>
+        </article>
 
-        <div class="card">
-          <h3>🌱 Sustentabilidade</h3>
-          <p>
-            Muitos produtores utilizam técnicas sustentáveis para preservar a natureza.
-          </p>
-        </div>
+        <!-- Card 2 -->
+        <article class="card">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+            alt="Empregos"
+            class="card-img"
+          >
+
+          <div class="card-conteudo">
+            <h3>💼 Geração de empregos</h3>
+            <p>
+              Milhões de pessoas trabalham no campo e nas indústrias ligadas
+              ao agronegócio.
+            </p>
+
+            <button class="btn-card">Saiba mais</button>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/1995/1995470.png"
+            alt="Tecnologia"
+            class="card-img"
+          >
+
+          <div class="card-conteudo">
+            <h3>🚜 Tecnologia</h3>
+            <p>
+              Máquinas modernas, drones e sistemas inteligentes ajudam a
+              melhorar a produção agrícola.
+            </p>
+
+            <button class="btn-card">Saiba mais</button>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="card">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/4277/4277356.png"
+            alt="Sustentabilidade"
+            class="card-img"
+          >
+
+          <div class="card-conteudo">
+            <h3>🌱 Sustentabilidade</h3>
+            <p>
+              Muitos produtores utilizam técnicas sustentáveis para preservar
+              os recursos naturais.
+            </p>
+
+            <button class="btn-card">Saiba mais</button>
+          </div>
+        </article>
 
       </div>
     </section>
@@ -95,7 +145,7 @@
 
   <footer>
     <p>Projeto Agrinho 2026 - Por Estevan Lopes Hereck</p>
-  </footer> 
+  </footer>
 
 </body>
 </html>
